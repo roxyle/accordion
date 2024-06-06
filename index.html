@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accordion</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container py-2 pb-5"> <!--container esterno w100%-->
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-10 before-faq colonna-faq"> <!--colonna con il ::before prima dell'h2-->
+                <h2 class="titolo-faq">Domande Frequenti</h2>
+                <p class="fw-semibold titolo-faq">
+                    Alcune domande che ci vengono poste di frequente.
+                </p>
+
+            </div>
+        </div>
+        <!--inizio seconda row contenente le accordion-->
+        <div class="row align-items-center justify-content-center ombreggiatura">
+            <div class="col-10">
+                <!--inizio accordion-->
+                <div class="accordion accordion-flush mt-3" id="accordion-faq">
+                    <div class="accordion-item py-4 mx-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                1. Domanda numero uno
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordion-faq">
+                            <div class="accordion-body accordion-risposte">
+                                <p>
+                                    Risposta alla domanda numero 1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item py-4 mx-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. Domanda numero due
+
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordion-faq">
+                            <div class="accordion-body accordion-risposte">
+                                <p>
+                                    Risposta alla domanda numero 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item py-4 mx-3">
+                        <h2 class="accordion-header " id="headingThree">
+                            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3. Domanda numero tre
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordion-faq">
+                            <div class="accordion-body accordion-risposte">
+                                <p>
+                                    Risposta alla domanda numero 3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fine accordion-->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--boots-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
